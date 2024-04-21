@@ -1,0 +1,52 @@
+/* Main style */
+.error-main {
+  /* border: 1px solid black; */
+  height: 70vh;
+}
+.error-msgbox {
+  /* border: 1px solid black; */
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error-msgbox p {
+  margin: 12px 0;
+}
+
+.error-404 {
+  /* border: 1px solid black; */
+  color: black;
+  font-size: 28px;
+}
+.oops {
+  /* border: 1px solid black; */
+  font-size: 80px;
+  font-weight: bold;
+  width: fit-content;
+}
+.error-msg {
+  /* border: 1px solid black; */
+  font-size: 20px;
+  width: 50%;
+  text-align: center;
+}
+
+/* Back to safty button */
+.footer {
+  /* border: 1px solid black; */
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.button {
+  background-color: black;
+  color: white;
+  /* border: 1px solid black; */
+  border-radius: 50px;
+  width: 60vw;
+  padding: 20px 0;
+  text-align: center;
+}

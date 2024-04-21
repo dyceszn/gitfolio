@@ -1,0 +1,46 @@
+.menu-main {
+  height: 70vh;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-col-1 {
+  width: 20vw;
+  align-self: center;
+}
+.menu-list {
+  list-style: none;
+}
+.menu-list li {
+  margin: 20px 0;
+}
+
+.vertical-line {
+  align-self: center;
+  width: 1px;
+  height: 60vh;
+  margin: 0 10px;
+  background-color: black;
+}
+.menu-col-2 {
+  justify-self: end;
+  width: 65vw;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  padding: 30px 30px;
+  text-align: center;
+}
