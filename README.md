@@ -46,6 +46,7 @@ Follow these steps to get Gitfolio up and running on your local machine:
 3. Install dependencies:
 
    ```bash
+   $ npm install
    $ npm install axios
    $ npm install react-router-dom
    ```
