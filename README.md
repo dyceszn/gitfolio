@@ -1,5 +1,7 @@
 # Gitfolio
 
+Still in develolpment.
+
 Gitfolio is a minimalist web project created by dyceszn that utilizes the GitHub API. It allows users to manage their GitHub repositories, including creating, modifying, and deleting repositories. This project was developed as part of the Altschool exam.
 
 ## Why Gitfolio?
@@ -46,6 +48,7 @@ Follow these steps to get Gitfolio up and running on your local machine:
 3. Install dependencies:
 
    ```bash
+   $ npm install
    $ npm install axios
    $ npm install react-router-dom
    ```
