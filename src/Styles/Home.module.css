@@ -1,0 +1,117 @@
+.upper_container {
+  /* border: 1px solid white; */
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lower_container {
+  /* border: 1px solid white; */
+  height: 40%;
+}
+.form {
+  /* border: 1px solid black; */
+  background-color: var(--primary-color);
+  width: clamp(300px, 50%, 50%);
+  height: clamp(50px, 6vh, 60px);
+  border-radius: 100rem;
+  outline: 2px solid #8233c5;
+  display: flex;
+  justify-content: space-between;
+}
+.form input {
+  background-color: var(--primary-color);
+  box-sizing: border-box;
+  border: none;
+  padding: 0 2.5rem;
+  width: 85%;
+  outline: none;
+  height: 100%;
+  border-radius: 100rem 0 0 100rem;
+}
+.form button {
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: var(--primary-color);
+  outline: none;
+  width: 15%;
+  height: 95%;
+  border-radius: 0 100rem 100rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.arrow {
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Animation Keyframes */
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 1100px), (orientation: portrait) {
+  .form {
+    width: clamp(250px, 60%, 70%);
+  }
+  .form input {
+    width: 80%;
+  }
+  .form button {
+    width: 20%;
+  }
+  .arrow {
+    width: 1.1rem;
+    height: 0.8rem;
+  }
+  .upper_container {
+    height: 40%;
+  }
+  .lower_container {
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .form {
+    width: clamp(200px, 70%, 90%);
+  }
+
+  .form input {
+    width: 75%;
+    font-size: 3vw;
+
+    padding: 0 2rem;
+  }
+
+  .form button {
+    width: 25%;
+  }
+
+  .arrow {
+    width: 1.5rem;
+    height: 0.8rem;
+  }
+
+  .upper_container {
+    height: 40%;
+  }
+
+  .lower_container {
+    height: 60%;
+  }
+}

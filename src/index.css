@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --gradient-one: linear-gradient(45deg, #274b74, #8233c5, #e963fd);
+  --gradient-two: linear-gradient(45deg, #5c2774, #335cc5, #637ffd);
+  --gradient-three: linear-gradient(45deg, #276174, #33c58e, #63fd88);
+  --gradient-color-one: #8233c5;
+  --gradient-color-two: #335cc5;
+  --gradient-color-three: #33c58e;
+  --primary-color: #f5f5f5;
+  --secondary-color: #d9d9d9;
+  --tertiary-color: white;
+  --text-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: black;
+  font-family: "Montserrat";
+  height: 100vh;
+  overflow: hidden;
+  padding: 0 10vw;
+  color: var(--text-color);
+  font-size: 0.8rem;
+}
+main {
+  height: 100vh;
+}
+
+input {
+  font-family: "Montserrat";
+}
+button {
+  font-family: "Montserrat";
+  cursor: pointer;
+}
+li {
+  list-style: none;
+  padding: 0.8rem 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.arrow {
+  /* border: 1px solid black; */
+  width: 20px;
+  height: 15px;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 1100px), (orientation: portrait) {
+  body {
+    margin: 0;
+    padding: 0 5vw;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  body {
+    padding: 0;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  body {
+    overflow-y: scroll;
+  }
+  main {
+    height: 900px;
+  }
 }

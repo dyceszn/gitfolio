@@ -73,43 +73,6 @@ Once Gitfolio is running, follow these steps to manage your GitHub repositories:
 4. **Modify**: Edit existing repositories by clicking on the repository name.
 5. **Delete**: Remove repositories by clicking on the delete icon.
 
-## Folder Structure
-
-Here's an overview of the project's folder structure:
-
-```
-gitfolio/
-├── public/
-│   ├── index.html
-│   └── ...
-├── src/
-│   ├── api.js
-│   ├── assets/
-│   │   └── (Any assets like images, logos, etc.)
-│   ├── components/
-│   │   ├── styles/
-│   │   │   ├── card.css
-│   │   │   ├── header.css
-│   │   │   └── footer.css
-│   │   ├── Footer.jsx
-│   │   ├── Header.jsx
-│   │   └── RepoCard.jsx
-│   ├── pages/
-│   │   ├── styles/
-│   │   │   ├── home.css
-│   │   │   ├── menu.css
-│   │   │   ├── error.css
-│   │   │   └── global.css
-│   │   ├── Home.jsx
-│   │   ├── Menu.jsx
-│   │   └── Error.jsx
-│   ├── App.js
-│   ├── index.js
-│   └── ...
-└── ...
-
-```
-
 ## Contributing
 
 Gitfolio is an open-source project, and contributions are welcome! If you'd like to contribute, please follow these guidelines:
